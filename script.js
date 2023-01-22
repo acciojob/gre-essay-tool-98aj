@@ -1,5 +1,5 @@
 let evaluatedText = document.getElementById("evaluatedText");
-	    let letterCount = document.getElementById("letterCount");
+	    let letterCount = document.getElementById("wordCount");
 
 
 		let word = evaluatedText.value;
