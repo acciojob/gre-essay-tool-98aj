@@ -1,21 +1,15 @@
-//your code here
-let inp = document.createElement('input');
-inp.setAttribute('id', 'evaluatedText');
-document.body.append(inp);
-
-let head = document.createElement('h3');
-head.setAttribute('id', 'wordCount');
-document.body.append(head)
-
-let textct = document.getElementById('evaluatedText')
-let text = document.getElementById('wordCount')
-
-text.innerHTML = textct.value.length;
-
-textct.addEventListener('input', cal)
+let evaluatedText = document.getElementById("evaluatedText");
+	    let letterCount = document.getElementById("letterCount");
 
 
+		let word = evaluatedText.value;
+		let wordLength = word.length;
+		letterCount.innerHTML = wordLength;
 
-function cal(){
-    text.innerHTML = textct.value.length;
-}
+	    evaluatedText.addEventListener("input", cal)
+
+	    function cal(){
+	    	let word = evaluatedText.value;
+		let wordLength = word.length;
+		letterCount.innerHTML = wordLength;
+	    }
